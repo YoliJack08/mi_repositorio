@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="MIEL, NATURAL, SALUD, NATURISTA, PLANTAS, HIERBAS, CURACIÓN">
+    <meta name="description" content="Página web exclusiva de productos naturistas (homeopatía)">
+    <title>Tienda Naturista Online</title>
+    <!------------------------------------Bootstrap Link ------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- --------------------------- Fuentes: Baloo|Josefin|Poppins|Kite|Sigmar One --------------------------- -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo Thambi 2|Josefin Sans|Poppins|Kite One|Sigmar One">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<!-- -------------------------- Inicio de la página -------------------------- -->
+<body class="indexResponsive">
+    <!-- ----------------------------- Encabezado ------------------------------ -->
+    <header>
+    <!-- ------------------------------ Navegador ------------------------------ -->
+    <nav class="navbar navbar-expand-lg navbar-light navegador ">
+        <div class="container-fluid menu">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="./multimedia/Logo.png" alt="Logo tienda naturista" /></a>
+          <button class="navbar-toggler barraMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paginas/Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paginas/Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paginas/Ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paginas/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+    </header>
+    <!-- -------------------------- Primer Encabezado -------------------------- -->
+    <h1 class="encabezadoDelSitio">Naturista Online</h1>
+    <!-- --------------------------- Inicio del main --------------------------- -->
+    <main>
+        <!-- ------------------------- Inicio del cuerpo de la página -------------------------- -->
+        <p class="main__entradaEncabezado">Porque te queremos saludable, tenemos cosas nuevas para ti</p>
+        <!-- ----------------------------- Producto 1 ------------------------------ -->
+        <div id="imagenes">
+            <section class="imag1">
+                <p class="tituloProducto">Producto 1</p>
+                <img class="imgProduct" src="./multimedia/imag1.JPG" alt="Valeriana" />
+                <p class="parrafoProducto">
+                    La valeriana actúa como una especie de sedante que se encarga de
+                    relajar el sistema nervioso y el cerebro. No agota ni debilita a quienes
+                    la consumen, por lo que se suele recomendar en personas que tengan problemas con el sueño.
+                </p>
+            </section>
+            <!-- ----------------------------- Producto 2 ------------------------------ -->
+            <section class="imag2">
+                <p class="tituloProducto">Producto 2</p>
+                <img class="imgProduct" src="./multimedia/imag2.JPG" alt="Magnesio" />
+                <p class="parrafoProducto">
+                    El magnesio te permite estar más relajado y contento, pues su
+                    presencia influye en la producción de serotonina, una sustancia que
+                    mantiene el equilibrio de tu estado de ánimo.
+                </p>
+            </section>
+            <!-- ----------------------------- Producto 3 ------------------------------ -->
+            <section class="imag3">
+                <p class="tituloProducto">Producto 3</p>
+                <img class="imgProduct" src="./multimedia/imag3.JPG" alt="Vitaminas para niños" />
+                <p class="parrafoProducto">
+                    Es una de las más conocidas y mantiene a los tejidos sanos: músculos,
+                    encías, vasos sanguíneos. Ayuda a combatir las infecciones, y la
+                    hallas en los limones, naranjas, fresas, tomates, brócoli, kiwi, col,
+                    pimientos rojos.
+                </p>
+            </section>
+        </div>
+    </main>
+    <!-- ------------------------- Inicio del cuerpo de la página -------------------------- -->
+    <p class="main__entradaEncabezado" style="border: solid 5px rgba(0, 128, 0, 0.849);">Lo más buscado de la semana</p>
+    <!-- Carrusel de imagenes con Bootstrap -->
+    <section id="banner" class="custom-height">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./multimedia/promo1.jpg" class="d-block w-100" alt="colageno">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/promo2.jpg" class="d-block w-100" alt="bacalao">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/promo3.jpg" class="d-block w-100" alt="Ajolotius">
+                <div class="carousel-caption d-none d-md-block">
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </section>
+    <!-- ---------------------------- Pie de página ---------------------------- -->
+    <footer>
+        <div class="row justify-content-evenly">
+            <div class="col-2">Siguenos</div>
+            <div class="col-2">Terminos y Condiciones</div>
+            <div class="col-2">Horarios</div>
+        </div>
+    </footer>
+    <!-- Script Bundle (Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

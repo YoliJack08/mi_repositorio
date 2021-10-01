@@ -1,0 +1,77 @@
+/*Ofertas*/
+.filtros {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(38, 73, 2);
+  }
+  
+  select {
+    margin-right: 20px;
+    color: rgb(67, 133, 1);
+  
+  }
+  
+  table .idOff {
+    background-color: rgb(230, 26, 26);
+  }
+  
+  .porcentaje {
+    background-color: rgb(255, 1, 56);
+    color: white;
+    font-weight: bolder;
+  }
+  
+  
+  
+  .gallery {
+    
+    width: 100%;
+    border-top: dotted 5px rgba(0, 128, 0, 0.849);
+    display: grid;
+    grid-template-rows: 20px 200px;
+    gap: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    &__section{
+        @for $i from 1 through 3{
+          &-#{$i} {
+            background-image: url('/multimedia/jabon#{$i}.JPG');
+            height: 180px;
+            width: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            animation-name:shadow-pop-bl;
+            animation-duration: 3s;
+        @if $i == 1{
+          grid-column: span 1;    
+          grid-row: 2/3;  
+            }
+        @else if $i == 2{
+          grid-column: span 1; 
+          grid-row: 2/3;
+        }
+        @else if $i == 3{
+          grid-column: span 1; 
+          grid-row: 2/3;
+        }
+          }
+        }
+       
+    
+    & > a {
+      font-size: 2rem;
+      width: 50px;
+      height: 70px;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: rgba(240, 255, 205, 0.87);
+      color: rgba(134, 65, 65, 5);
+      }
+  }
+  }
+
+  @keyframes shadow-pop-bl{0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:-1px 1px #3e3e3e,-2px 2px #3e3e3e,-3px 3px #4bcc24,-4px 4px #4bcc24,-5px 5px #4bcc24,-6px 6px #4bcc24,-7px 7px #3e3e3e,-8px 8px #3e3e3e;transform:translateX(8px) translateY(-8px)}}  

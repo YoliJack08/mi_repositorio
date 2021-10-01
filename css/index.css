@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* IMPORTS */
+/* PARTIALS */
+/*Encabezado*/
+header {
+  background-color: #fdfdfd;
+  /*cierra navegador*/ }
+  header .navegador {
+    /* display: inline; */
+    margin: 10px;
+    background-color: #CEDC02;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: right; }
+    header .navegador .menu #navbarNav > ul > li > a {
+      color: #141414; }
+      header .navegador .menu #navbarNav > ul > li > a:active {
+        color: #978d34;
+        text-decoration: none; }
+        header .navegador .menu #navbarNav > ul > li > a:active:hover {
+          color: #015f36; }
+          header .navegador .menu #navbarNav > ul > li > a:active:hover:link {
+            text-decoration: none; }
+            header .navegador .menu #navbarNav > ul > li > a:active:hover:link:visited {
+              text-decoration: none; }
+  header .navbar-toggler {
+    background-color: rgba(148, 158, 11, 0.925);
+    border-color: #0b3f09; }
+
+/*cierra header*/
+.logo {
+  width: 5rem;
+  height: 5rem;
+  display: inline;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin: 10px; }
+
+footer {
+  background: linear-gradient(180deg, #9ebd13 0%, #008552 100%);
+  font-family: 'Baloo Thambi 2', cursive;
+  padding: 10px;
+  margin: 20px;
+  color: white; }
+
+.main__entradaEncabezado {
+  color: #438501;
+  text-shadow: 2px 2px 5px #a7d10e;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: 'Kite One', sans-serif;
+  padding: 15px;
+  margin: 30px 0px 10px 0px;
+  animation-duration: 1.5s;
+  animation-name: aparecer; }
+
+.encabezadoDelSitio {
+  font-family: 'Baloo Thambi 2', cursive;
+  letter-spacing: 2px;
+  color: #e5f0e2;
+  background: linear-gradient(183deg, #2f4b03 0%, #097909 34%, #45d67d 80%);
+  /*#78C63B*/
+  letter-spacing: 5px;
+  padding: 10px 0px 10px 20px; }
+
+/*Animación para aparecer entradaEncabezado*/
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*Reseteo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* PAGES */
+/*tamaño de imagenes en carrusel*/
+.d-block {
+  width: 1fr;
+  height: 450px;
+  overflow: hidden; }
+
+#imagenes {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  /*separación */
+  justify-content: space-around;
+  /*imagen del producto*/ }
+  #imagenes .tituloProducto {
+    color: green;
+    margin-bottom: 20px;
+    border-top: outset 5px rgba(0, 128, 0, 0.849); }
+  #imagenes .imgProduct {
+    width: 100px;
+    height: 200px;
+    padding-bottom: 10px;
+    border-bottom: groove 2px #96c000;
+    animation-name: shadow-drop-center;
+    animation-duration: 2s;
+    /*Animación sombra para las imagenes del producto*/
+    /*termina sombra*/ }
+    #imagenes .imgProduct .shadow-drop-center {
+      animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent; }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); } }
+
+.parrafoProducto {
+  margin: 15px 50px 15px 50px;
+  padding: 15px 40px 15px 40px;
+  font-size: 15px;
+  background-color: rgba(235, 229, 229, 0.452);
+  transition: background ease-in-out 0.3; }
+
+/*Transformación cambio de color parrafo del producto*/
+.parrafoProducto:hover {
+  background-color: #78C63B; }
+
+/*Contacto*/
+.container {
+  border-top: outset 5px rgba(0, 128, 0, 0.849); }
+
+.fcontacto {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; }
+
+.main__introNosotros {
+  font-family: 'Kite One', sans-serif;
+  padding: 15px;
+  color: #438501;
+  font-size: 15px;
+  text-align: center;
+  border-top: outset 5px rgba(0, 128, 0, 0.849); }
+
+.picture__imgSalud {
+  width: 1000px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#div__miYvi {
+  width: 100%;
+  height: 250px;
+  margin: 30px 0px 30px 0px;
+  padding: 10px;
+  text-align: center;
+  color: #438501;
+  font-family: 'Kite One', sans-serif;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 3fr 4fr 3fr;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "pMision .         pVision" "p1Mision imgMiYVi p1Vision"; }
+
+.pMision,
+.pVision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto; }
+
+.pMision {
+  grid-area: pMision; }
+
+.p1Mision {
+  grid-area: p1Mision; }
+
+.pVision {
+  grid-area: pVision; }
+
+.p1Vision {
+  grid-area: p1Vision; }
+
+.imgMiYVi {
+  grid-area: imgMiYVi;
+  width: 300px;
+  height: 200px; }
+
+#div__video {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Kite One', sans-serif;
+  margin: auto; }
+
+/*Ofertas*/
+.filtros {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #264902; }
+
+select {
+  margin-right: 20px;
+  color: #438501; }
+
+table .idOff {
+  background-color: #e61a1a; }
+
+.porcentaje {
+  background-color: #ff0138;
+  color: white;
+  font-weight: bolder; }
+
+.gallery {
+  width: 100%;
+  border-top: dotted 5px rgba(0, 128, 0, 0.849);
+  display: grid;
+  grid-template-rows: 20px 200px;
+  gap: 5px;
+  align-content: center;
+  align-items: center;
+  justify-content: center; }
+  .gallery__section-1 {
+    background-image: url("/multimedia/jabon1.JPG");
+    height: 180px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: shadow-pop-bl;
+    animation-duration: 3s;
+    grid-column: span 1;
+    grid-row: 2/3; }
+  .gallery__section-2 {
+    background-image: url("/multimedia/jabon2.JPG");
+    height: 180px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: shadow-pop-bl;
+    animation-duration: 3s;
+    grid-column: span 1;
+    grid-row: 2/3; }
+  .gallery__section-3 {
+    background-image: url("/multimedia/jabon3.JPG");
+    height: 180px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: shadow-pop-bl;
+    animation-duration: 3s;
+    grid-column: span 1;
+    grid-row: 2/3; }
+  .gallery__section > a {
+    font-size: 2rem;
+    width: 50px;
+    height: 70px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(240, 255, 205, 0.87);
+    color: #864141; }
+
+@keyframes shadow-pop-bl {
+  0% {
+    box-shadow: 0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;
+    transform: translateX(0) translateY(0); }
+  100% {
+    box-shadow: -1px 1px #3e3e3e,-2px 2px #3e3e3e,-3px 3px #4bcc24,-4px 4px #4bcc24,-5px 5px #4bcc24,-6px 6px #4bcc24,-7px 7px #3e3e3e,-8px 8px #3e3e3e;
+    transform: translateX(8px) translateY(-8px); } }
+
+/*Productos*/
+/*Factores de la tabla*/
+table {
+  border: 3px solid #c7e22e;
+  padding: 6px;
+  margin: 35px; }
+  table th {
+    background-color: #55e073;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 4px;
+    color: white; }
+  table tr,
+  table td {
+    border: 1px solid #5c5c5a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px; }
+  table ul {
+    list-style-image: url(../multimedia/icon.JPG);
+    margin-left: 60px;
+    text-align: left; }
+  table ol {
+    margin-left: 20px;
+    text-align: left;
+    list-style-type: upper-roman; }

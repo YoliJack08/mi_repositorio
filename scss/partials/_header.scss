@@ -1,0 +1,60 @@
+/*Encabezado*/
+header {
+  background-color: rgb(253, 253, 253);
+
+  .navegador {
+    /* display: inline; */
+    margin: 10px;
+    background-color: #CEDC02;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: right;
+
+    .menu {
+      #navbarNav {
+        &>ul {
+          &>li {
+            &>a {
+              color: rgb(20, 20, 20);
+        
+              &:active {
+               color: rgb(151, 141, 52);
+               text-decoration: none;
+                 
+              &:hover {
+               color: rgb(1, 95, 54);
+              
+              &:link {
+               text-decoration: none;
+              
+              &:visited {
+               text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+    } /*cierra navegador*/
+
+    .navbar-toggler {
+      background-color: rgba(148, 158, 11, 0.925);
+      border-color: rgb(11, 63, 9);
+    }
+  }
+/*cierra header*/
+
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  display: inline;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin: 10px;
+}

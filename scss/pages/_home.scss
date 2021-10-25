@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-#imagenes {
+.imagenees {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -34,16 +34,9 @@
             animation: shadow-drop-center .4s cubic-bezier(.25, .46, .45, .94) both
         }
 
-        @keyframes shadow-drop-center {
-            0% {
-                box-shadow: 0 0 0 0 transparent
-            }
-
-            100% {
-                box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
-            }
+        @keyframes shadow-drop-center { 
+            0% { box-shadow: 0 0 0 0 transparent} 100% { box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)}
         }
-
         /*termina sombra*/
     }
 }
